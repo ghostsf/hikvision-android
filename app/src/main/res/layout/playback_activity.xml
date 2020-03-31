@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".PlayBackActivity" >
+
+    <RelativeLayout
+        android:id="@+id/playBackSurfaceViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/playBackControlLayout"
+        android:layout_marginTop="5dp" >
+
+        <SurfaceView
+            android:id="@+id/playbackSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/playBackProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/playBackControlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/playBackStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:enabled="false"
+            android:text="开始" />
+
+        <Button
+            android:id="@+id/playBackPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:enabled="false"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/playBackStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:enabled="false"
+            android:text="停止" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            
+        <Button
+            android:id="@+id/playBackCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:enabled="false"
+            android:text="抓拍" />
+
+        <Button
+            android:id="@+id/playBackRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:enabled="false"
+            android:text="录像" />
+
+        <Button
+            android:id="@+id/playBackRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:enabled="false"
+            android:text="音频" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
